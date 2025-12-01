@@ -1,123 +1,65 @@
-body {
-  margin: 0;
-  font-family: 'Orbitron', sans-serif;
-  background-color: #0c0c0c;
-  color: #e0e0e0;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velora AI - Where AI Meets Emotion</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="hero">
+    <img src="logo.png" alt="Velora AI Logo" class="logo" />
+    <h1>Where <span>AI</span> Meets Emotion</h1>
+    <a href="#albums" class="btn">🎧 Listen Now</a>
+  </header>
 
-.hero {
-  text-align: center;
-  padding: 100px 20px 60px;
-  background: linear-gradient(to bottom, #000428, #004e92);
-}
+  <section id="albums" class="albums-section">
+    <h2>🎶 Albums</h2>
 
-.logo {
-  width: 120px;
-  margin-bottom: 20px;
-}
+    <div class="album">
+      <img src="light-in-the-desert.jpg" alt="Light in the Desert" />
+      <h3>Light in the Desert</h3>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6E3QxXBtQkc203foi8HYRs?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
 
-.hero h1 {
-  font-size: 2.5rem;
-  color: #ffffff;
-}
+    <div class="album">
+      <img src="parallel-hearts.jpg" alt="Parallel Hearts" />
+      <h3>Parallel Hearts</h3>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1kxkN4UCBPPHxltbnsgdJN?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
 
-.hero h1 span {
-  color: #00ffe1;
-  text-shadow: 0 0 10px #00ffe1;
-}
+  <section id="about" class="about-section">
+    <h2>🧠 About Velora AI</h2>
+    <p><strong>Velora AI</strong> is a musical project where <strong>AI composes both lyrics and melodies</strong>, crafted and curated by <strong>Mustafa Rasheed</strong>. Blending technology with emotion, Velora AI explores soundscapes that transcend human boundaries — crafted not by hands, but by code. Its mission is simple yet powerful: <em>to share joy with the world</em> through the creative spark of artificial intelligence.</p>
+  </section>
 
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #00ffe1;
-  color: #000;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
+  <section id="coming-soon" class="coming-section">
+    <h2>🛠️ Coming Soon</h2>
+    <ul>
+      <li>🛍️ Merchandise</li>
+      <li>📱 Social Media</li>
+      <li>🎤 Booking & Collaborations</li>
+    </ul>
+    <p>Stay tuned!</p>
+  </section>
 
-.btn:hover {
-  background: #00ccbb;
-}
+  <section id="newsletter" class="newsletter-section">
+    <h2>📬 Join the Mailing List</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
+  <section id="contact" class="contact-section">
+    <h2>📩 Contact</h2>
+    <p>Email: <a href="mailto:Velora.AI2025@gmail.com">Velora.AI2025@gmail.com</a></p>
+  </section>
 
-.albums-section h2,
-.about-section h2,
-.coming-section h2,
-.newsletter-section h2,
-.contact-section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.album {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.album img {
-  max-width: 300px;
-  border-radius: 12px;
-  margin-bottom: 10px;
-  box-shadow: 0 0 10px #00ffe1;
-}
-
-.coming-section ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  font-size: 1.1em;
-}
-
-.coming-section li {
-  margin: 8px 0;
-}
-
-.newsletter-section form {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.newsletter-section input[type="email"] {
-  padding: 10px;
-  width: 250px;
-  border: none;
-  border-radius: 4px;
-}
-
-.newsletter-section button {
-  padding: 10px 20px;
-  background-color: #00ffe1;
-  border: none;
-  color: #000;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.newsletter-section button:hover {
-  background-color: #00ccbb;
-}
-
-.contact-section p {
-  text-align: center;
-  font-size: 1.2em;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #000;
-  font-size: 0.9em;
-  color: #777;
-}
+  <footer>
+    <p>© 2025 Velora AI. All rights reserved.</p>
+  </footer>
+</body>
+</html>
