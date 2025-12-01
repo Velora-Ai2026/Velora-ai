@@ -8,34 +8,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <canvas id="wave-bg"></canvas>
+
   <header class="hero">
     <img src="logo.png" alt="Velora AI Logo" class="logo" />
-    <h1>Where <span>AI</span> Meets Emotion</h1>
-    <a href="#albums" class="btn">🎧 Listen Now</a>
+    <h1 class="fade-in">Where <span>AI</span> Meets Emotion</h1>
+    <a href="#albums" class="btn fade-in">🎧 Listen Now</a>
   </header>
 
-  <section id="albums" class="albums-section">
+  <section id="albums" class="albums-section fade-up">
     <h2>🎶 Albums</h2>
 
     <div class="album">
       <img src="light-in-the-desert.jpg" alt="Light in the Desert" />
       <h3>Light in the Desert</h3>
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6E3QxXBtQkc203foi8HYRs?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <div class="player-glow">
+        <iframe src="https://open.spotify.com/embed/album/6E3QxXBtQkc203foi8HYRs?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
     </div>
 
     <div class="album">
       <img src="parallel-hearts.jpg" alt="Parallel Hearts" />
       <h3>Parallel Hearts</h3>
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1kxkN4UCBPPHxltbnsgdJN?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <div class="player-glow">
+        <iframe src="https://open.spotify.com/embed/album/1kxkN4UCBPPHxltbnsgdJN?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
     </div>
   </section>
 
-  <section id="about" class="about-section">
+  <section id="about" class="about-section fade-up">
     <h2>🧠 About Velora AI</h2>
     <p><strong>Velora AI</strong> is a musical project where <strong>AI composes both lyrics and melodies</strong>, crafted and curated by <strong>Mustafa Rasheed</strong>. Blending technology with emotion, Velora AI explores soundscapes that transcend human boundaries — crafted not by hands, but by code. Its mission is simple yet powerful: <em>to share joy with the world</em> through the creative spark of artificial intelligence.</p>
   </section>
 
-  <section id="coming-soon" class="coming-section">
+  <section id="coming-soon" class="coming-section fade-up">
     <h2>🛠️ Coming Soon</h2>
     <ul>
       <li>🛍️ Merchandise</li>
@@ -45,7 +51,7 @@
     <p>Stay tuned!</p>
   </section>
 
-  <section id="newsletter" class="newsletter-section">
+  <section id="newsletter" class="newsletter-section fade-up">
     <h2>📬 Join the Mailing List</h2>
     <form>
       <input type="email" placeholder="Enter your email" required />
@@ -53,7 +59,7 @@
     </form>
   </section>
 
-  <section id="contact" class="contact-section">
+  <section id="contact" class="contact-section fade-up">
     <h2>📩 Contact</h2>
     <p>Email: <a href="mailto:Velora.AI2025@gmail.com">Velora.AI2025@gmail.com</a></p>
   </section>
@@ -61,5 +67,7 @@
   <footer>
     <p>© 2025 Velora AI. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
