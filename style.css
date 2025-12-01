@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0c0c0c;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(to bottom, #000428, #004e92);
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.hero h1 span {
+  color: #00ffe1;
+  text-shadow: 0 0 10px #00ffe1;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #00ffe1;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #00ccbb;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.albums-section h2,
+.about-section h2,
+.coming-section h2,
+.newsletter-section h2,
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.album {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.album img {
+  max-width: 300px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #00ffe1;
+}
+
+.coming-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.coming-section li {
+  margin: 8px 0;
+}
+
+.newsletter-section form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter-section input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter-section button {
+  padding: 10px 20px;
+  background-color: #00ffe1;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-section button:hover {
+  background-color: #00ccbb;
+}
+
+.contact-section p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  font-size: 0.9em;
+  color: #777;
+}
