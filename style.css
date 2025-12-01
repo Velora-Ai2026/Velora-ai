@@ -1,24 +1,46 @@
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background-color: #0c0c0c;
   color: #e0e0e0;
   line-height: 1.6;
+  background-color: #000;
+  position: relative;
+  z-index: 1;
+}
+
+.background-logo {
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.05;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .hero {
   text-align: center;
-  padding: 100px 20px 60px;
-  background: linear-gradient(to bottom, #000428, #004e92);
-}
-
-.logo {
-  width: 120px;
-  margin-bottom: 20px;
+  padding: 120px 20px 60px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #ffffff;
 }
 
@@ -47,13 +69,11 @@ section {
   padding: 60px 20px;
   max-width: 900px;
   margin: auto;
+  position: relative;
+  z-index: 1;
 }
 
-.albums-section h2,
-.about-section h2,
-.coming-section h2,
-.newsletter-section h2,
-.contact-section h2 {
+section h2 {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -120,59 +140,4 @@ footer {
   background-color: #000;
   font-size: 0.9em;
   color: #777;
-}
-/* Waveform background */
-#wave-bg {
-  position: fixed;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #000;
-}
-
-/* Animations */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1.4s ease forwards;
-}
-.fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 1.2s ease forwards;
-}
-.fade-up:nth-child(even) {
-  animation-delay: 0.3s;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Spotify glow */
-.player-glow {
-  margin: auto;
-  max-width: 400px;
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-/* Album hover effect */
-.album img {
-  transition: transform 0.3s ease;
-}
-.album img:hover {
-  transform: scale(1.05);
 }
